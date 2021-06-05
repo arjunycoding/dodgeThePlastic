@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.game{
+    background-image: url("img/oceanBackgound.png");
+    
+    width:700px;
+    height:310px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#fish{
+    position:absolute;
+    top:150px;
+}
+/* 
+.trash{
+    animation: ;
+} */
+
+#trash1, #trash2, #trash3 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation: moveTrash 5s infinite linear;
+    z-index: inherit;
+}
+
+#static-div {
+    float: left;
+    position: fixed;
+    z-index:10;
+    top: 10;
+    left: 0;
+    width: 120px;
+    height: 310px;
+    background-color: white;
+    border: 2px solid white;
+  }
+  
+@keyframes moveTrash {
+    0% {left: 585px;}
+    100% {left: -300px;}
+}
