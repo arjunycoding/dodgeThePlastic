@@ -12,18 +12,9 @@ body{
     border: 1px solid black;
 }
 
-#fish{
-    position:absolute;
-    top:150px;
-}
-/* 
-.trash{
-    animation: ;
-} */
 
 #trash1, #trash2, #trash3 {
     position: relative;
-    width: 100px;
     height: 100px;
     animation: moveTrash 5s infinite linear;
     z-index: inherit;
@@ -35,13 +26,32 @@ body{
     z-index:10;
     top: 10;
     left: 0;
-    width: 120px;
+    width: 605px;
     height: 310px;
     background-color: white;
     border: 2px solid white;
-  }
+}
+#static-div-two{
+    float: right;
+    position: fixed;
+    z-index:10;
+    top: 10;
+    left: 1316px;
+    width: 300px;
+    height: 310px;
+    background-color: white;
+    border: 2px solid white;
+}
   
 @keyframes moveTrash {
-    0% {left: 585px;}
-    100% {left: -300px;}
+    0% {left: 770px;}
+    100% {left: -1000px;}
+}
+#fish{
+    position:absolute;
+    top:150px;
+    left:700px;
+    bottom:1px;
+    right:300px;
+    position: fixed;
 }
