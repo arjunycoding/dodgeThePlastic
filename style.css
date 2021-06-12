@@ -51,6 +51,14 @@ body{
         left: -1000px;
     }
 }
+@keyframes moveLeft {
+    0% {
+        left: +1;
+    }
+    100% {
+        left: +4;
+    }
+}
 #fish{
     position:absolute;
     top:150px;
@@ -58,4 +66,8 @@ body{
     bottom:1px;
     right:300px;
     position: fixed;
+}
+
+.fishLeft{
+    animation: moveLeft 1s linear;
 }
