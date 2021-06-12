@@ -44,8 +44,12 @@ body{
 }
   
 @keyframes moveTrash {
-    0% {left: 770px;}
-    100% {left: -1000px;}
+    0% {
+        left: 770px;
+    }
+    100% {
+        left: -1000px;
+    }
 }
 #fish{
     position:absolute;
