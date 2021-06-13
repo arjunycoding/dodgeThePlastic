@@ -1,25 +1,26 @@
-body{
-    margin: 0px;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.game{
-    background-image: url("img/oceanBackgound.png");
-    
-    width:700px;
-    height:310px;
-    margin: auto;
-    border: 1px solid black;
+.game {
+  background-image: url("img/oceanBackgound.png");
+
+  width: 700px;
+  height: 310px;
+  margin: auto;
+  border: 1px solid black;
 }
 
-
-#trash1, #trash2, #trash3 {
-    position: relative;
-    height: 100px;
-    animation: moveTrash 5s infinite linear;
-    z-index: inherit;
+#trash1,
+#trash2,
+#trash3 {
+  position: relative;
+  height: 100px;
+  animation: moveTrash 5s infinite linear;
+  z-index: inherit;
 }
-
+/* 
 #static-div {
     float: left;
     position: fixed;
@@ -42,32 +43,32 @@ body{
     background-color: white;
     border: 2px solid white;
 }
-  
+   */
 @keyframes moveTrash {
-    0% {
-        left: 770px;
-    }
-    100% {
-        left: -1000px;
-    }
+  0% {
+    left: 770px;
+  }
+  100% {
+    left: -1000px;
+  }
 }
 @keyframes moveLeft {
-    0% {
-        left: +1;
-    }
-    100% {
-        left: +4;
-    }
+  0% {
+    left: 700px;
+  }
+  100% {
+    left: 600px;
+  }
 }
-#fish{
-    position:absolute;
-    top:150px;
-    left:700px;
-    bottom:1px;
-    right:300px;
-    position: fixed;
+#fish {
+  position: absolute;
+  top: 150px;
+  left: 700px;
+  bottom: 1px;
+  right: 300px;
+  position: absolute;
 }
 
-.fishLeft{
-    animation: moveLeft 1s linear;
+.fishLeft {
+  animation: moveLeft 2s linear;
 }

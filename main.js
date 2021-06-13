@@ -8,9 +8,9 @@ let images = [
 ]
 var keyNames = {
     32: "space",
-    39: "left",
+    37: "left",
     38: "up",
-    37: "right",
+    39: "right",
     40: "down"
 };
 let randomIndex = Math.floor(Math.random() * 6);
@@ -19,7 +19,7 @@ let randomIndex3 = Math.floor(Math.random() * 6);
 let trash1 = $("#trash1")
 let trash2 = $("#trash2")
 let trash3 = $("#trash3")
-let fish = $("#fish")
+let fish = document.querySelector("#fish")
 for(let i = 0; i <= 5; i++){
     if(randomIndex == randomIndex2 || randomIndex == randomIndex3){
         randomIndex = Math.floor(Math.random() * 6);
@@ -36,8 +36,6 @@ trash2.attr( "src", images[randomIndex2])
 trash3.attr( "src", images[randomIndex3])
 
 $("body").keydown(function(event) {
-    if(keyNames[event.keyCode] == "left");{
-        fish.attr("class", "fishLeft")
-        confirm("left")
-    }
+    if(event)
+        fish.classList.add("fishLeft")
 })
