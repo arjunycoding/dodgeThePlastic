@@ -6,7 +6,7 @@ body {
 .game {
   background-image: url("img/oceanBackgound.png");
 
-  width: 700px;
+  width: 690px;
   height: 310px;
   margin: auto;
   border: 1px solid black;
@@ -16,48 +16,41 @@ body {
 #trash2,
 #trash3 {
   position: relative;
-  height: 100px;
+  height: 75px;
   animation: moveTrash 5s infinite linear;
   z-index: inherit;
+  margin-bottom: 40px;
 }
-/* 
+
 #static-div {
     float: left;
     position: fixed;
     z-index:10;
     top: 10;
     left: 0;
-    width: 605px;
+    width: 420px;
     height: 310px;
     background-color: white;
     border: 2px solid white;
 }
 #static-div-two{
+    position: absolute;
     float: right;
-    position: fixed;
     z-index:10;
     top: 10;
-    left: 1316px;
+    left: 1124px;
     width: 300px;
     height: 310px;
     background-color: white;
     border: 2px solid white;
 }
-   */
+  
 @keyframes moveTrash {
   0% {
     left: 770px;
   }
   100% {
     left: -1000px;
-  }
-}
-@keyframes moveLeft {
-  0% {
-    left: 700px;
-  }
-  100% {
-    left: 600px;
   }
 }
 #fish {
@@ -67,8 +60,4 @@ body {
   bottom: 1px;
   right: 300px;
   position: absolute;
-}
-
-.fishLeft {
-  animation: moveLeft 2s linear;
 }
