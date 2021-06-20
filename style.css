@@ -2,7 +2,9 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+h1{
+  margin:10px
+}
 .game {
   background-image: url("img/oceanBackgound.png");
 
