@@ -15,7 +15,6 @@ function generatePlastic(){
     let randomIndex = Math.floor(Math.random() * 6);
     let randomIndex2 = Math.floor(Math.random() * 6);
     let randomIndex3 = Math.floor(Math.random() * 6);
-    console.log("hi");
     for(let i = 0; i <= 5; i++){
         if(randomIndex == randomIndex2 || randomIndex == randomIndex3){
             randomIndex = Math.floor(Math.random() * 6);
