@@ -52,9 +52,12 @@ function eventHandler(event){
         }
     }
 }
+function detectCollision(e){
+    return`
+        Trash 1 X/Y: ${e.screenX}, ${e.screenY}
+        Trash 1 X/Y: ${e.screenX}, ${e.screenY}
+        Trash 1 X/Y: ${e.screenX}, ${e.screenY}
+        `;
+}
 $("body").keydown(eventHandler)
 setInterval(generatePlastic, 2500)
-
-// keyNames
-//     38: "up",
-//     40: "down"
