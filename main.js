@@ -46,10 +46,14 @@ function eventHandler(event){
         yPos = y + "px";
         fish.css("top", yPos)
         console.log(yPos)
-
         if(yPos == 330 + "px"){
             y -= 10
         }
+    }
+}
+function identifyHit(){
+    if($("#trash1").css("left")){
+        
     }
 }
 $("body").keydown(eventHandler)
